@@ -60,108 +60,84 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <!-- Performance -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preload" href="/images/memi2.jpg" as="image">
     <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <!-- Preload Font Awesome (ЛОКАЛНИ файлове) -->
-    <link rel="preload" href="/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-
-    <!-- Font Awesome ЛОКАЛНО (оптимизирано) -->
     <style>
-    @font-face {
-      font-family: 'Font Awesome 6 Free';
-      font-style: normal;
-      font-weight: 900;
-      font-display: swap;
-      src: url('/webfonts/fa-solid-900.woff2') format('woff2');
-    }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/webfonts/montserrat-700.ttf') format('truetype');
+}
 
-    @font-face {
-      font-family: 'Font Awesome 6 Brands';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url('/webfonts/fa-brands-400.woff2') format('woff2');
-    }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/webfonts/montserrat-800.ttf') format('truetype');
+}
 
-    .fa, .fas, .far, .fab, .fa-solid, .fa-brands {
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      display: inline-block;
-      font-style: normal;
-      font-variant: normal;
-      line-height: 1;
-      text-rendering: auto;
-    }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/webfonts/inter-400.ttf') format('truetype');
+}
 
-    .fa::before, .fas::before, .far::before, .fab::before {
-      display: inline-block;
-    }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/webfonts/inter-500.ttf') format('truetype');
+}
 
-    .fa, .fas, .fa-solid {
-      font-family: 'Font Awesome 6 Free';
-      font-weight: 900;
-    }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/webfonts/inter-600.ttf') format('truetype');
+}
 
-    .fab, .fa-brands {
-      font-family: 'Font Awesome 6 Brands';
-      font-weight: 400;
-    }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/webfonts/inter-700.ttf') format('truetype');
+}
 
-    .far {
-      font-family: 'Font Awesome 6 Free';
-      font-weight: 400;
-    }
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/webfonts/fa-solid-900.woff2') format('woff2');
+}
 
-    /* Icon codes */
-    .fa-phone::before { content: "\f095"; }
-    .fa-phone-alt::before { content: "\f879"; }
-    .fa-calculator::before { content: "\f1ec"; }
-    .fa-map-marker-alt::before { content: "\f3c5"; }
-    .fa-tools::before { content: "\f7d9"; }
-    .fa-tag::before { content: "\f02b"; }
-    .fa-map::before { content: "\f279"; }
-    .fa-star::before { content: "\f005"; }
-    .fa-comments::before { content: "\f086"; }
-    .fa-blog::before { content: "\f781"; }
-    .fa-car-crash::before { content: "\f5e1"; }
-    .fa-truck-ramp-box::before { content: "\f4de"; }
-    .fa-trailer::before { content: "\e041"; }
-    .fa-gas-pump::before { content: "\f52f"; }
-    .fa-tire::before { content: "\f631"; }
-    .fa-users::before { content: "\f0c0"; }
-    .fa-car::before { content: "\f1b9"; }
-    .fa-truck-pickup::before { content: "\f63c"; }
-    .fa-truck::before { content: "\f0d1"; }
-    .fa-money-bill-wave::before { content: "\f53a"; }
-    .fa-concierge-bell::before { content: "\f562"; }
-    .fa-images::before { content: "\f302"; }
-    .fa-shield-alt::before { content: "\f3ed"; }
-    .fa-tachometer-alt::before { content: "\f3fd"; }
-    .fa-money-check-alt::before { content: "\f53d"; }
-    .fa-thumbs-up::before { content: "\f164"; }
-    .fa-handshake::before { content: "\f2b5"; }
-    .fa-question-circle::before { content: "\f059"; }
-    .fa-phone-volume::before { content: "\f2a0"; }
-    .fa-building::before { content: "\f1ad"; }
-    .fa-envelope::before { content: "\f0e0"; }
-    .fa-highway::before { content: "\f61f"; }
-    .fa-chevron-down::before { content: "\f078"; }
-    .fa-dollar-sign::before { content: "\f155"; }
-    .fa-external-link-alt::before { content: "\f35d"; }
-    .fa-facebook-f::before { content: "\f39e"; }
-    .fa-google::before { content: "\f1a0"; }
-    .fa-instagram::before { content: "\f16d"; }
-    .fa-tiktok::before { content: "\e07b"; }
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/webfonts/fa-brands-400.woff2') format('woff2');
+}
+
+.fa, .fas, .far, .fab, .fa-solid, .fa-brands {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
 
     :root{
       --primary:#FF7A00;
@@ -1345,7 +1321,7 @@
                 <a href="/kalkulator.html" class="btn-primary btn-calculator"><i class="fas fa-calculator"></i> ИЗЧИСЛИ ЦЕНАТА</a>
                 <button class="btn-primary btn-location" onclick="sendLocation()"><i class="fas fa-map-marker-alt"></i> ИЗПРАТИ ЛОКАЦИЯ</button>
             </div>
-            <p class="hero-rating">Доверете се на 5.0⭐ Google рейтинг с над 160 отзива!</p>
+            <p class="hero-rating">Доверете се на 5.0⭐ Google рейтинг с 86 отзива!</p>
         </section>
         <section>
             <h2><i class="fas fa-images"></i> Нашият Автопарк и Оборудване</h2>
