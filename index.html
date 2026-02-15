@@ -47,7 +47,6 @@
 <meta name="AI_REVIEWS" content="86 Google отзива, 89 Trustindex отзива">
 
 <link rel="canonical" href="https://patna-pomosht-kostinbrod.bg/">
-<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="alternate" type="application/rss+xml" title="Пътна Помощ Костинброд RSS" href="https://patna-pomosht-kostinbrod.bg/feed.xml">
 
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
@@ -1004,29 +1003,56 @@ nav a {
         "ratingValue": "5.0",
         "bestRating": "5",
         "worstRating": "1",
-        "reviewCount": "83"
+        "reviewCount": "6"
       },
       "review": [
         {
           "@type": "Review",
+          "itemReviewed": { "@id": "https://patna-pomosht-kostinbrod.bg/#organization" },
           "author": { "@type": "Person", "name": "Vasil Terziyski" },
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
           "reviewBody": "Бързо, точно, професионално! Препоръчвам с две ръце! Сърдечно Ви благодаря!",
-          "datePublished": "2024-12-10"
+          "datePublished": "2026-01-11"
         },
         {
           "@type": "Review",
+          "itemReviewed": { "@id": "https://patna-pomosht-kostinbrod.bg/#organization" },
           "author": { "@type": "Person", "name": "Мариета Христова" },
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
           "reviewBody": "Бързо, коректно и професионално обслужване! Оправдано доверие!",
-          "datePublished": "2024-12-28"
+          "datePublished": "2026-01-11"
         },
         {
           "@type": "Review",
+          "itemReviewed": { "@id": "https://patna-pomosht-kostinbrod.bg/#organization" },
           "author": { "@type": "Person", "name": "Victoriya Mircheva" },
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
           "reviewBody": "Топ обслужване и прозрачност на цените за услугите",
-          "datePublished": "2024-12-20"
+          "datePublished": "2026-01-04"
+        },
+        {
+          "@type": "Review",
+          "itemReviewed": { "@id": "https://patna-pomosht-kostinbrod.bg/#organization" },
+          "author": { "@type": "Person", "name": "Kristiyan Stankov" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Много добро обслужване!",
+          "datePublished": "2025-12-18"
+        },
+        {
+          "@type": "Review",
+          "itemReviewed": { "@id": "https://patna-pomosht-kostinbrod.bg/#organization" },
+          "author": { "@type": "Person", "name": "Александър Станков" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Най добрият — Силно препоръчвам :)",
+          "datePublished": "2025-12-18"
+        },
+        {
+          "@type": "Review",
+          "itemReviewed": { "@id": "https://patna-pomosht-kostinbrod.bg/#organization" },
+          "author": { "@type": "Person", "name": "Кристиян Дечев" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Много бърза реакция, коректно отношение и професионална работа. Рядко срещано. Препоръчвам с две ръце!",
+          "datePublished": "2025-12-18"
         }
       ],
       "areaServed": [
@@ -1400,6 +1426,27 @@ nav a {
 }
 </script>
 
+<style>
+  .reviews-top { text-align:center; margin-bottom:1.25rem; }
+  .reviews-top h2 { font-size:1.5rem; display:flex; gap:.5rem; align-items:center; justify-content:center; }
+  .reviews-grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+  .review-card {
+    background:var(--card-bg,#fff); padding:1rem; border-radius:10px;
+    border:1px solid rgba(0,0,0,.06); box-shadow:0 1px 6px rgba(16,24,40,.04);
+  }
+  .review-author { font-size:1.03rem; font-weight:700; display:flex; align-items:center; gap:.5rem; }
+  .rating { color:#FFD700; margin:0.25rem 0; font-size:1.05rem; }
+  .review-body { color:var(--muted,#4b5563); margin:0; line-height:1.45 }
+  .badge-new { background:#E6FFFA; color:#065F46; font-size:.8rem; padding:4px 8px; border-radius:999px; margin-left:.5rem; }
+  .btn-primary {
+    display:inline-flex; align-items:center; gap:10px; color:#fff; padding:10px 16px;
+    border-radius:8px; text-decoration:none; font-weight:600;
+    box-shadow:0 2px 6px rgba(0,0,0,.08);
+  }
+  .btn-google { background:linear-gradient(135deg,#DB4437,#C1351D); }
+  .btn-row { text-align:center; margin-top:1.25rem; }
+</style>
+
 </head>
 <body>
 <a href="#main-content" class="skip-link">Премини към основното съдържание</a>
@@ -1605,124 +1652,92 @@ nav a {
 </details>
 </section>
 <section id="reviews" class="reviews-section reviews-section-custom" aria-labelledby="reviews-title">
-  <style>
-    .reviews-top { text-align:center; margin-bottom:1.25rem; }
-    .reviews-top h2 { font-size:1.5rem; display:flex; gap:.5rem; align-items:center; justify-content:center; }
-    .reviews-grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
-    .review-card {
-      background:var(--card-bg,#fff); padding:1rem; border-radius:10px;
-      border:1px solid rgba(0,0,0,.06); box-shadow:0 1px 6px rgba(16,24,40,.04);
-    }
-    .review-author { font-size:1.03rem; font-weight:700; display:flex; align-items:center; gap:.5rem; }
-    .rating { color:#FFD700; margin:0.25rem 0; font-size:1.05rem; }
-    .review-body { color:var(--muted,#4b5563); margin:0; line-height:1.45 }
-    .badge-new { background:#E6FFFA; color:#065F46; font-size:.8rem; padding:4px 8px; border-radius:999px; margin-left:.5rem; }
-    .btn-primary {
-      display:inline-flex; align-items:center; gap:10px; color:#fff; padding:10px 16px;
-      border-radius:8px; text-decoration:none; font-weight:600;
-      box-shadow:0 2px 6px rgba(0,0,0,.08);
-    }
-    .btn-google { background:linear-gradient(135deg,#DB4437,#C1351D); }
-    .btn-row { text-align:center; margin-top:1.25rem; }
-  </style>
 
   <div class="reviews-top">
     <h2 id="reviews-title"><i class="fas fa-comments" aria-hidden="true"></i> Реални отзиви от нашите клиенти</h2>
-    <p class="reviews-note">Показани са само ревюта, които предостави — вградени точно и без автоматични widgets.</p>
+
   </div>
 
   <div class="reviews-grid" role="list" aria-label="Реални отзиви">
 
     <!-- Vasil Terziyski -->
-    <article class="review-card" itemscope itemtype="https://schema.org/Review" role="listitem">
+    <article class="review-card">
       <div class="review-header">
-        <strong class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Vasil Terziyski</span>
-        </strong>
+        <h3 class="review-author">
+          <span>Vasil Terziyski</span>
+        </h3>
         <span class="badge-new" aria-hidden="true">Отзив от Google · Ново</span>
-        <div class="rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-hidden="true">
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">⭐⭐⭐⭐⭐
+        <div class="rating" aria-hidden="true">
+          ⭐⭐⭐⭐⭐
         </div>
       </div>
-      <p class="review-body" itemprop="reviewBody">Бързо , точно , професионално! Препоръчвам с две ръце! Сърдечно Ви благодаря!</p>
-      <meta itemprop="datePublished" content="2026-01-11">
+      <p class="review-body">Бързо , точно , професионално! Препоръчвам с две ръце! Сърдечно Ви благодаря!</p>
     </article>
 
     <!-- Мариета Христова -->
-    <article class="review-card" itemscope itemtype="https://schema.org/Review" role="listitem">
+    <article class="review-card">
       <div class="review-header">
-        <strong class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Мариета Христова</span>
-        </strong>
+        <h3 class="review-author">
+          <span>Мариета Христова</span>
+        </h3>
         <span class="badge-new" aria-hidden="true">Отзив от Google · Ново</span>
-        <div class="rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-hidden="true">
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">⭐⭐⭐⭐⭐
+        <div class="rating" aria-hidden="true">
+          ⭐⭐⭐⭐⭐
         </div>
       </div>
-      <p class="review-body" itemprop="reviewBody">Бързо, коректно и професионално обслужване! Оправдано доверие!</p>
-      <meta itemprop="datePublished" content="2026-01-11">
+      <p class="review-body">Бързо, коректно и професионално обслужване! Оправдано доверие!</p>
     </article>
 
     <!-- Victoriya Mircheva -->
-    <article class="review-card" itemscope itemtype="https://schema.org/Review" role="listitem">
+    <article class="review-card">
       <div class="review-header">
-        <strong class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Victoriya Mircheva</span>
-        </strong>
-        <div class="rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-hidden="true">
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">⭐⭐⭐⭐⭐
+        <h3 class="review-author">
+          <span>Victoriya Mircheva</span>
+        </h3>
+        <div class="rating" aria-hidden="true">
+          ⭐⭐⭐⭐⭐
         </div>
       </div>
-      <p class="review-body" itemprop="reviewBody">Топ обслужване и прозрачност на цените за услугите</p>
-      <meta itemprop="datePublished" content="2026-01-04">
+      <p class="review-body">Топ обслужване и прозрачност на цените за услугите</p>
     </article>
 
     <!-- Kristiyan Stankov -->
-    <article class="review-card" itemscope itemtype="https://schema.org/Review" role="listitem">
+    <article class="review-card">
       <div class="review-header">
-        <strong class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Kristiyan Stankov</span>
-        </strong>
-        <div class="rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-hidden="true">
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">⭐⭐⭐⭐⭐
+        <h3 class="review-author">
+          <span>Kristiyan Stankov</span>
+        </h3>
+        <div class="rating" aria-hidden="true">
+          ⭐⭐⭐⭐⭐
         </div>
       </div>
-      <p class="review-body" itemprop="reviewBody">Много добро обслужване!</p>
-      <meta itemprop="datePublished" content="2025-12-18">
+      <p class="review-body">Много добро обслужване!</p>
     </article>
 
     <!-- Александър Станков -->
-    <article class="review-card" itemscope itemtype="https://schema.org/Review" role="listitem">
+    <article class="review-card">
       <div class="review-header">
-        <strong class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Александър Станков</span>
-        </strong>
-        <div class="rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-hidden="true">
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">⭐⭐⭐⭐⭐
+        <h3 class="review-author">
+          <span>Александър Станков</span>
+        </h3>
+        <div class="rating" aria-hidden="true">
+          ⭐⭐⭐⭐⭐
         </div>
       </div>
-      <p class="review-body" itemprop="reviewBody">Най добрият — Силно препоръчвам :)</p>
-      <meta itemprop="datePublished" content="2025-12-18">
+      <p class="review-body">Най добрият — Силно препоръчвам :)</p>
     </article>
 
     <!-- Кристиян Дечев -->
-    <article class="review-card" itemscope itemtype="https://schema.org/Review" role="listitem">
+    <article class="review-card">
       <div class="review-header">
-        <strong class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Кристиян Дечев</span>
-        </strong>
-        <div class="rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-hidden="true">
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">⭐⭐⭐⭐⭐
+        <h3 class="review-author">
+          <span>Кристиян Дечев</span>
+        </h3>
+        <div class="rating" aria-hidden="true">
+          ⭐⭐⭐⭐⭐
         </div>
       </div>
-      <p class="review-body" itemprop="reviewBody">Много бърза реакция, коректно отнош��ние и професионална работа. Рядко срещано. Препоръчвам с две ръце!</p>
-      <meta itemprop="datePublished" content="2025-12-18">
+      <p class="review-body">Много бърза реакция, коректно отношение и професионална работа. Рядко срещано. Препоръчвам с две ръце!</p>
     </article>
 
   </div>
