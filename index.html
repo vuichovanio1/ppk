@@ -945,6 +945,12 @@ nav a {
       "name": "Пътна Помощ Костинброд",
       "description": "Денонощна пътна помощ и репатрак в Костинброд и областта. Единствен онлайн калкулатор за точна цена.",
       "publisher": { "@id": "https://patna-pomosht-kostinbrod.bg/#organization" },
+      "creator": {
+        "@type": "Organization",
+        "@id": "https://moverstudio.online/#organization",
+        "name": "MoverStudio",
+        "url": "https://moverstudio.online"
+      },
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://patna-pomosht-kostinbrod.bg/?s={search_term_string}",
@@ -988,22 +994,23 @@ nav a {
         "longitude": 23.2154
       },
       "hasMap": "https://maps.google.com/?q=42.8130,23.2154",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday",
-          "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59",
-        "description": "Денонощна работа 24/7/365"
-      },
+      "openingHoursSpecification": [
+        {
+          "dayOfWeek": [
+            "Monday", "Tuesday", "Wednesday", "Thursday",
+            "Friday", "Saturday", "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59",
+          "description": "Денонощна работа 24/7/365"
+        }
+      ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
         "bestRating": "5",
         "worstRating": "1",
-        "reviewCount": "6"
+        "reviewCount": "86"
       },
       "review": [
         {
@@ -1073,7 +1080,12 @@ nav a {
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Удостоверение",
-        "recognizedBy": { "@type": "Organization", "name": "КАТ България" },
+        "recognizedBy": { 
+          "@type": "Organization", 
+          "name": "Изпълнителна агенция „Автомобилна администрация“",
+          "alternateName": "ИААА",
+          "url": "https://rta.government.bg/"
+        },
         "identifier": "42-00048/28.01.2021"
       },
       "knowsAbout": [
@@ -1817,7 +1829,7 @@ nav a {
 <i class="fab fa-tiktok"></i>
 </a>
 </div>
-<p class="footer-copyright">© 2021 - 2025 Всички права запазени. "Транспортер Иван Иванов" ЕООД.</p>
+            <p class="footer-copyright">Изработка на сайт от <a href="https://moverstudio.online" target="_blank" rel="noopener">Mover Studio</a></p>
 </div>
 </footer>
 <div id="cookie-consent" class="cookie-consent">

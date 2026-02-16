@@ -523,7 +523,7 @@
         <p><strong id="footer-company">Транспортер Иван Иванов ЕООД</strong></p>
         <p id="footer-address">ул. Бяло море 16, Костинброд 2230</p>
         <p id="footer-license">Удостоверение №42-00048/28.01.2021</p>
-        <p id="footer-copyright">© 2021–2025 Всички права запазени</p>
+        <p id="footer-copyright">Професионална изработка на сайт – <a href="https://moverstudio.online" target="_blank" rel="noopener">Mover Studio</a></p>
     </footer>
     <script type="application/ld+json">
     {
@@ -552,11 +552,11 @@
         "opens": "00:00",
         "closes": "23:59"
       }],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": 5.0,
-        "reviewCount": 75
-      },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": 5.0,
+                "reviewCount": 86
+            },
       "areaServed": [
         {"@type":"City","name":"Костинброд"},
         {"@type":"City","name":"Сливница"},
@@ -576,6 +576,22 @@
       ]
     }
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://patna-pomosht-kostinbrod.bg/",
+      "name": "Пътна Помощ Костинброд",
+      "creator": {
+        "@type": "Organization",
+        "@id": "https://moverstudio.online/#organization",
+        "name": "MoverStudio",
+        "url": "https://moverstudio.online"
+      }
+    }
+    </script>
+
     <script>
         const RATE = 1.95583;
         let currentLang = 'bg';
@@ -607,7 +623,7 @@
                 footerCompany: "Транспортер Иван Иванов ЕООД",
                 footerAddress: "ул. Бяло море 16, Костинброд 2230",
                 footerLicense: "Удостоверение №42-00048/28.01.2021",
-                footerCopyright: "© 2021–2025 Всички права запазени",
+                footerCopyright: "Професионална изработка на сайт – <a href=\"https://moverstudio.online\" target=\"_blank\" rel=\"noopener\">Mover Studio</a>",
                 breakdownBase: "Базова цена (вкл. отиване и връщане)",
                 breakdownNoHook: "Липса на кука",
                 breakdownTires: "Блокирали гуми",
@@ -644,7 +660,7 @@
                 footerCompany: "Transporter Ivan Ivanov Ltd",
                 footerAddress: "Byalo More 16 Str., Kostinbrod 2230",
                 footerLicense: "Certificate No.42-00048/28.01.2021",
-                footerCopyright: "© 2021–2025 All rights reserved",
+                footerCopyright: "Професионална изработка на сайт – <a href=\"https://moverstudio.online\" target=\"_blank\" rel=\"noopener\">Mover Studio</a>",
                 breakdownBase: "Base price (round trip included)",
                 breakdownNoHook: "Missing hook",
                 breakdownTires: "Blocked tires",
@@ -681,7 +697,7 @@
                 footerCompany: "Transporter Ivan Ivanov GmbH",
                 footerAddress: "Byalo More 16, Kostinbrod 2230",
                 footerLicense: "Zertifikat Nr.42-00048/28.01.2021",
-                footerCopyright: "© 2021–2025 Alle Rechte vorbehalten",
+                footerCopyright: "Професионална изработка на сайт – <a href=\"https://moverstudio.online\" target=\"_blank\" rel=\"noopener\">Mover Studio</a>",
                 breakdownBase: "Grundpreis (Hin- und Rückfahrt)",
                 breakdownNoHook: "Haken fehlt",
                 breakdownTires: "Blockierte Reifen",
@@ -718,7 +734,7 @@
                 footerCompany: "Transporter Ivan Ivanov Ltd",
                 footerAddress: "Byalo More 16 Sok., Kostinbrod 2230",
                 footerLicense: "Sertifika No.42-00048/28.01.2021",
-                footerCopyright: "© 2021–2025 Tüm hakları saklıdır",
+                footerCopyright: "Професионална изработка на сайт – <a href=\"https://moverstudio.online\" target=\"_blank\" rel=\"noopener\">Mover Studio</a>",
                 breakdownBase: "Temel fiyat (gidiş-dönüş dahil)",
                 breakdownNoHook: "Kanca eksik",
                 breakdownTires: "Bloke lastikler",
@@ -755,7 +771,7 @@
                 footerCompany: "Transporter Ivan Ivanov SRL",
                 footerAddress: "Byalo More 16, Kostinbrod 2230",
                 footerLicense: "Certificat Nr.42-00048/28.01.2021",
-                footerCopyright: "© 2021–2025 Toate drepturile rezervate",
+                footerCopyright: "Професионална изработка на сайт – <a href=\"https://moverstudio.online\" target=\"_blank\" rel=\"noopener\">Mover Studio</a>",
                 breakdownBase: "Preț de bază (inclusiv tur-retur)",
                 breakdownNoHook: "Fără cârlig",
                 breakdownTires: "Anvelope blocate",
@@ -800,7 +816,7 @@
             document.getElementById('footer-company').innerText = t.footerCompany;
             document.getElementById('footer-address').innerText = t.footerAddress;
             document.getElementById('footer-license').innerText = t.footerLicense;
-            document.getElementById('footer-copyright').innerText = t.footerCopyright;
+            document.getElementById('footer-copyright').innerHTML = t.footerCopyright;
             document.querySelectorAll('.language-selector button').forEach(btn => btn.classList.remove('active'));
             if (event && event.target) {
                 let btn = event.target.closest('button');

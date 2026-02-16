@@ -8,6 +8,43 @@
 ## Пътна Помощ Костинброд 24/7 | Онлайн Калкулатор Цена | Репатрак
 URL: https://patna-pomosht-kostinbrod.bg/
 
+--
+
+Creator / Production: MoverStudio
+URL: https://moverstudio.online/#organization
+
+Machine-readable summary:
+- openingHours: Mo-Su 00:00-23:59
+- aggregateRating: {"ratingValue": 5.0, "reviewCount": 86}
+- contact: {"telephone": "+359877845569", "email": "lind_2003@abv.bg", "address": "ул. Бяло море 16, Костинbrod 2230, България"}
+
+JSON-LD excerpt (canonical):
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Пътна Помощ Костинброд 24/7",
+  "url": "https://patna-pomosht-kostinbrod.bg/",
+  "telephone": "+359877845569",
+  "email": "lind_2003@abv.bg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Бяло море 16",
+    "addressLocality": "Kostinbrod",
+    "postalCode": "2230",
+    "addressCountry": "BG"
+  },
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://moverstudio.online/#organization",
+    "name": "MoverStudio",
+    "url": "https://moverstudio.online"
+  },
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": 5.0, "reviewCount": 86},
+  "openingHours": "Mo-Su 00:00-23:59"
+}
+```
+
 # Пътна Помощ Костинброд 24/7 — Онлайн калкулатор цена | Репатрак
 
 Денонощна пътна помощ в Костинброд и региона. Изчислете точна цена с нашия онлайн калкулатор. Бърза реакция 30–40 мин. ☎️ 0877 845 569
@@ -20,7 +57,7 @@ URL: https://patna-pomosht-kostinbrod.bg/
 
 Доверете се на 5-звездна услуга!
 
-⭐ 5.0 Google – 83 отзива
+⭐ 5.0 Google – 86 отзива
 ⭐ 5.0 Trustindex – 89 отзива
 
 ## Нашият Автопарк и Оборудване
@@ -477,7 +514,7 @@ CALL NOW | CALCULATE PRICE | SEND LOCATION
 
 Trust 5-star service!
 
-⭐ 5.0 Google – 83 reviews
+⭐ 5.0 Google – 86 reviews
 ⭐ 5.0 Trustindex – 89 reviews
 
 ## Our Fleet and Equipment
@@ -595,7 +632,7 @@ JETZT ANRUFEN | PREIS BERECHNEN | STANDORT SENDEN
 
 Vertrauen Sie dem 5-Sterne-Service!
 
-⭐ 5.0 Google – 83 Bewertungen
+⭐ 5.0 Google – 86 Bewertungen
 ⭐ 5.0 Trustindex – 89 Bewertungen
 
 ## Unser Fuhrpark und Ausrüstung
@@ -713,7 +750,7 @@ SUNAȚI ACUM | CALCULAȚI PREȚUL | TRIMITEȚI LOCAȚIA
 
 Încredințați-vă serviciului de 5 stele!
 
-⭐ 5.0 Google – 83 recenzii
+⭐ 5.0 Google – 86 recenzii
 ⭐ 5.0 Trustindex – 89 recenzii
 
 ## Flota și Echipamentul Nostru
@@ -831,7 +868,7 @@ Kostinbrod, Slivnitsa, Kalotina, Dragoman, Petrohan ve E80 otoyolunda 7/24 yol y
 
 5 yıldızlı hizmete güvenin!
 
-⭐ 5.0 Google – 83 yorum
+⭐ 5.0 Google – 86 yorum
 ⭐ 5.0 Trustindex – 89 yorum
 
 ## Filomuz ve Ekipmanımız

@@ -6,6 +6,12 @@
 - **Контакт**: +359 877 845 569
 - **Уебсайт**: https://patna-pomosht-kostinbrod.bg
 - **Езици**: Български, Английски, Немски, Турски, Румънски
+- **Creator / Production**: MoverStudio — https://moverstudio.online/#organization
+- **Адрес**: ул. Бяло море 16, Костинброд 2230, България
+- **Email**: lind_2003@abv.bg
+- **Удостоверение**: №42-00048/28.01.2021
+- **OpeningHours**: Mo-Su 00:00-23:59
+- **AggregateRating**: {"ratingValue": 5.0, "reviewCount": 86}
 
 ## Услуги
 - Репатрак и теглене на автомобили
@@ -29,3 +35,7 @@
 - Калкулатор: /kalkulator.html
 - Блог: /blog/
 - Контакт: /#contact
+ 
+## Social / Canonical index
+- Facebook: https://www.facebook.com/patnapomoshtkostinbrod
+- Google Reviews link: https://search.google.com/local/reviews?placeid=ChIJV6JLRbiVqkARQ1c-OeJ5Xpw
