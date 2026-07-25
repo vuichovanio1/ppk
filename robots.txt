@@ -1,11 +1,7 @@
 User-agent: *
-Disallow: /CITY_PAGE_TEMPLATE.html
-
-# Препоръчително е да забраните обхождането на някои несъществени елементи,
-# за да запазите Crawl Budget, например:
-# Disallow: /cgi-bin/
-# Disallow: /tmp/
-# Disallow: /admin/ 
-# Disallow: /*?* # Блокира обхождането на страници с параметри (филтри, търсене), ако има такива
+Disallow: /ai-test.html
+Disallow: /404.html
+Disallow: /500.html
+Disallow: /index.amp.html
 
 Sitemap: https://patna-pomosht-kostinbrod.bg/sitemap.xml
