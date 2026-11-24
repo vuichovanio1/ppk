@@ -12,7 +12,17 @@
     var drop = document.querySelector(".dropdown.container");
     var nav = document.querySelector("nav.container");
 
+    // Only wrap existing region dropdown / main nav — never invent empty Menu UI
     if (headerInner && (drop || nav) && !document.getElementById("site-nav-panel")) {
+      var panel = document.createElement("div");
+      panel.id = "site-nav-panel";
+      panel.className = "site-nav-panel";
+      if (drop) panel.appendChild(drop);
+      if (nav) panel.appendChild(nav);
+
+      if (lang) lang.insertAdjacentElement("afterend", panel);
+      else headerInner.parentNode.insertBefore(panel, headerInner.nextSibling);
+
       var btn = document.createElement("button");
       btn.type = "button";
       btn.className = "site-menu-toggle";
@@ -20,17 +30,6 @@
       btn.setAttribute("aria-controls", "site-nav-panel");
       btn.innerHTML = '<i class="fas fa-bars" aria-hidden="true"></i> Меню';
       headerInner.appendChild(btn);
-
-      var panel = document.createElement("div");
-      panel.id = "site-nav-panel";
-      panel.className = "site-nav-panel";
-
-      if (drop) panel.appendChild(drop);
-      if (nav) panel.appendChild(nav);
-
-      var anchor = lang || headerInner.parentNode;
-      if (lang) lang.insertAdjacentElement("afterend", panel);
-      else headerInner.parentNode.insertBefore(panel, headerInner.nextSibling);
 
       btn.addEventListener("click", function () {
         var open = panel.classList.toggle("is-open");
