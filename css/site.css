@@ -281,15 +281,16 @@ nav a:hover {
   color: #fff;
 }
 
-/* Full-bleed without 100vw scrollbar bug when nested in .container */
+/* Full-bleed out of .container without max-width:100% gutters */
 main.container > .hero,
 main.container > .hero-stage,
 .container > .hero,
 .container > .hero-stage {
   width: 100vw;
-  max-width: 100%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  transform: none;
 }
 
 .hero::before,
