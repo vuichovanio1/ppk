@@ -3,5 +3,12 @@ Disallow: /ai-test.html
 Disallow: /404.html
 Disallow: /500.html
 Disallow: /index.amp.html
+Disallow: /ppk24113.zip
+Disallow: /images/*_orig.jpg
+Disallow: /Photos-1-001
+Disallow: /temp_fonts.css
+Disallow: /trigger.txt
+Disallow: /requirements.txt
+Disallow: /*.md$
 
 Sitemap: https://patna-pomosht-kostinbrod.bg/sitemap.xml

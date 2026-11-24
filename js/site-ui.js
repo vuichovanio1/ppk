@@ -37,6 +37,34 @@
       });
     }
 
+    if (headerInner) {
+      var headerBar = headerInner.closest("header");
+      var lastY = window.scrollY;
+      var acc = 0;
+      window.addEventListener(
+        "scroll",
+        function () {
+          var y = window.scrollY;
+          var delta = y - lastY;
+          lastY = y;
+          if (y < 48) {
+            acc = 0;
+            headerBar.classList.remove("is-hidden");
+            return;
+          }
+          acc += delta;
+          if (acc > 8) {
+            headerBar.classList.add("is-hidden");
+            acc = 0;
+          } else if (acc < -8) {
+            headerBar.classList.remove("is-hidden");
+            acc = 0;
+          }
+        },
+        { passive: true }
+      );
+    }
+
     document.querySelectorAll(".hero .btn-container, .hero-stage__cta").forEach(function (box) {
       var tel = box.querySelector('a[href^="tel:"]');
       if (tel) box.insertBefore(tel, box.firstChild);
@@ -86,13 +114,24 @@
     });
 
     document.querySelectorAll(".hero, .hero-stage").forEach(function (hero) {
-      if (hero.style.getPropertyValue("--hero-image")) return;
+      var existing = hero.style.getPropertyValue("--hero-image");
+      if (existing) {
+        // Root-relative so url() resolves against the page, not css/site.css
+        if (existing.indexOf("url('/") === -1 && existing.indexOf("url(\"/" ) === -1) {
+          hero.style.setProperty(
+            "--hero-image",
+            existing.replace("url('", "url('/").replace('url("', 'url("/')
+          );
+        }
+        return;
+      }
       var lg = document.querySelector('.image-gallery source[srcset*="-lg.webp"]');
       var img = document.querySelector(".image-gallery img");
       var url = lg
         ? (lg.getAttribute("srcset") || "").split(/\s+/)[0]
         : img && (img.currentSrc || img.getAttribute("src"));
       if (url) {
+        if (url.charAt(0) !== "/" && url.indexOf("http") !== 0) url = "/" + url.replace(/^\.\//, "");
         hero.style.setProperty("--hero-image", "url('" + url + "')");
         hero.classList.add("hero-stage");
       }
